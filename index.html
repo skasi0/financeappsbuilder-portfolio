@@ -151,16 +151,25 @@
       <h2 class="section-title">Leadership &amp; Stakeholder Endorsements</h2>
     <div class="grid">
       <div class="quote-card">
-        <p>“Senthil is a dream team member for anyone who manages a Financial Systems team. His NetSuite skillset is unparalleled—he’s the rare techno-functional talent, seamlessly bridging the gap between declarative and programmatic tasks... He succeeded with minimal guidance in a dynamic, often hectic work environment.”</p>
-        <div class="quote-author">&mdash; Previous Financial Systems Lead (LinkedIn Recommendation)</div>
+        <div>
+          <div class="quote-mark">&ldquo;</div>
+          <p>&ldquo;His NetSuite skillset is unparalleled&mdash;he&rsquo;s the rare techno-functional talent, seamlessly bridging the gap between declarative and programmatic tasks in a dynamic, often hectic work environment.&rdquo;</p>
+        </div>
+        <div class="quote-author">&mdash; Previous Financial Systems Lead</div>
       </div>
       <div class="quote-card">
-        <p>“Senthil Kasi is an excellent, business-savvy, technical system architect. I worked closely with him on a Financial Tooling (FinTools) team in challenging pre and post IPO situations... He can produce both high level and detail level solutions that are useful and actionable, and remains positive and steady during intense and stressful business cycles.”</p>
-        <div class="quote-author">&mdash; Finance Systems &amp; FinTools Partner (LinkedIn Recommendation)</div>
+        <div>
+          <div class="quote-mark">&ldquo;</div>
+          <p>&ldquo;An excellent, business-savvy technical system architect in challenging pre- and post-IPO situations. He produces both high-level and detail-level solutions that are actionable, and stays steady during intense business cycles.&rdquo;</p>
+        </div>
+        <div class="quote-author">&mdash; Finance Systems &amp; FinTools Partner</div>
       </div>
       <div class="quote-card">
-        <p>“Senthil is a fantastic collaborator to both technical and non-technical people, and is always willing to jump in and help unblock. On a technical level, Senthil is great at finding the best way to build or improve something and in a way that meets/exceeds the requirements of his teammates. 10/10 would love to work with Senthil again :)”</p>
-        <div class="quote-author">&mdash; Head of Accounts Payable (LinkedIn Recommendation)</div>
+        <div>
+          <div class="quote-mark">&ldquo;</div>
+          <p>&ldquo;A fantastic collaborator to both technical and non-technical teams, always willing to jump in and unblock. Great at finding the best way to build or improve systems in a way that exceeds requirements.&rdquo;</p>
+        </div>
+        <div class="quote-author">&mdash; Head of Accounts Payable</div>
       </div>
     </div>
     }
@@ -189,21 +198,34 @@
     .quote-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
+      border-top: 3px solid var(--accent);
       border-radius: 10px;
-      padding: 22px;
-      margin-bottom: 0;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .quote-mark {
+      font-family: Georgia, serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      color: var(--accent);
+      opacity: 0.75;
+      margin-bottom: 6px;
     }
     .quote-card p {
-      font-size: 0.92rem;
-      color: #e2e8f0;
+      font-size: 0.94rem;
+      color: #f1f5f9;
       font-style: italic;
-      margin-bottom: 12px;
+      line-height: 1.55;
+      margin-bottom: 16px;
     }
     .quote-author {
       font-size: 0.8rem;
       color: var(--accent);
       font-weight: 600;
+      border-top: 1px solid rgba(51, 65, 85, 0.7);
+      padding-top: 10px;
     }
     footer {
       border-top: 1px solid var(--border);

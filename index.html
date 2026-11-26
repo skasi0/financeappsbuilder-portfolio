@@ -51,18 +51,20 @@
     .actions { display: flex; flex-wrap: wrap; gap: 12px; }
     .hero-layout {
       display: flex;
-      align-items: center;
-      gap: 28px;
+      align-items: flex-start;
+      gap: 32px;
       flex-wrap: wrap;
     }
     .profile-pic {
-      width: 136px;
-      height: 136px;
-      border-radius: 50%;
+      width: 148px;
+      height: 148px;
+      border-radius: 16px; /* Soft rounded square looks more architectural than a floating circle */
       object-fit: cover;
-      border: 3px solid var(--accent);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      object-position: center 15%;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
       flex-shrink: 0;
+      margin-top: 4px;
     }
     .hero-content { flex: 1; min-width: 280px; }
     .btn {

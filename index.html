@@ -49,6 +49,22 @@
     }
     .lead { font-size: 1.02rem; color: var(--muted); max-width: 800px; margin-bottom: 24px; }
     .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-layout {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .profile-pic {
+      width: 136px;
+      height: 136px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      flex-shrink: 0;
+    }
+    .hero-content { flex: 1; min-width: 280px; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -185,20 +201,21 @@
 <body>
   <div class="container">
     <header>
-      <span class="eyebrow">Principal Enterprise Systems Architect &amp; Technical Product Owner</span>
-      <h1>Senthil Kasi</h1>
-      <div class="subtitle">Enterprise Finance Systems &bull; NetSuite OneWorld (13+ Yrs) &bull; SOX 404 Governance &bull; Governed AI Workflows</div>
-      <p class="lead">
-        15+ years of enterprise IT experience—including 13+ years across the Oracle NetSuite ERP ecosystem—architecting, integrating, and governing financial infrastructure from pre-IPO readiness through post-IPO operations. Partnering across Accounting, Treasury, InfoSec, and Engineering to bridge declarative ERP design with governed LLM automation on GCP.
-      </p>
-      <div class="actions">
-        <a class="btn btn-primary" href="https://subledger.financeappsbuilder.com" target="_blank" rel="noopener">
-          Launch Live Sub-Ledger Sandbox &rarr;
-        </a>
-        <!-- Replace with your exact LinkedIn profile URL -->
-        <a class="btn btn-secondary" href="https://www.linkedin.com/in/senthilkasi" target="_blank" rel="noopener">
-          Connect on LinkedIn
-        </a>
+      <div class="hero-layout">
+        <img src="profile.jpg" alt="Senthil Kasi" class="profile-pic" />
+        <div class="hero-content">
+          <span class="eyebrow">Principal Enterprise Systems Architect &amp; Technical Product Owner</span>
+          <h1>Senthil Kasi</h1>
+          <div class="subtitle">Enterprise Finance Systems &bull; NetSuite OneWorld (13+ Yrs) &bull; SOX 404 Governance &bull; Governed AI Workflows</div>
+          <p class="lead">
+            15+ years of enterprise IT experience—including 13+ years across the Oracle NetSuite ERP ecosystem—architecting, integrating, and governing financial infrastructure from pre-IPO readiness through post-IPO operations. Partnering across Accounting, Treasury, InfoSec, and Engineering to bridge declarative ERP design with governed LLM automation on GCP.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">
+              Connect on LinkedIn &rarr;
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 

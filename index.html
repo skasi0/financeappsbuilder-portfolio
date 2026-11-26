@@ -49,22 +49,39 @@
     }
     .lead { font-size: 1.02rem; color: var(--muted); max-width: 800px; margin-bottom: 24px; }
     .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    .hero-layout {
+    .linkedin-hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .cover-banner {
+      height: 112px;
+      background: linear-gradient(125deg, #0b192c 0%, #163252 55%, #0284c7 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-body {
+      padding: 0 28px 28px 28px;
+    }
+    .avatar-row {
       display: flex;
-      align-items: flex-start;
-      gap: 32px;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: -54px;
+      margin-bottom: 16px;
+      gap: 16px;
       flex-wrap: wrap;
     }
     .profile-pic {
-      width: 148px;
-      height: 148px;
-      border-radius: 16px; /* Soft rounded square looks more architectural than a floating circle */
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
       object-fit: cover;
-      object-position: center 15%;
-      border: 1px solid var(--border);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
-      flex-shrink: 0;
-      margin-top: 4px;
+      object-position: center 12%;
+      border: 4px solid var(--surface);
+      background: var(--bg);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
     }
     .hero-content { flex: 1; min-width: 280px; }
     .btn {
@@ -202,22 +219,21 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="hero-layout">
-        <img src="profile.jpg" alt="Senthil Kasi" class="profile-pic" />
-        <div class="hero-content">
-          <span class="eyebrow">Principal Enterprise Systems Architect &amp; Technical Product Owner</span>
-          <h1>Senthil Kasi</h1>
-          <div class="subtitle">Enterprise Finance Systems &bull; NetSuite OneWorld (13+ Yrs) &bull; SOX 404 Governance &bull; Governed AI Workflows</div>
-          <p class="lead">
-            15+ years of enterprise IT experience—including 13+ years across the Oracle NetSuite ERP ecosystem—architecting, integrating, and governing financial infrastructure from pre-IPO readiness through post-IPO operations. Partnering across Accounting, Treasury, InfoSec, and Engineering to bridge declarative ERP design with governed LLM automation on GCP.
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/senthilkasi/" target="_blank" rel="noopener">
-              Connect on LinkedIn &rarr;
-            </a>
-          </div>
+    <header class="linkedin-hero" style="border-bottom: none; padding-bottom: 0;">
+      <div class="cover-banner"></div>
+      <div class="hero-body">
+        <div class="avatar-row">
+          <img src="profile.jpg" alt="Senthil Kasi" class="profile-pic" />
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">
+            Connect on LinkedIn &rarr;
+          </a>
         </div>
+        <span class="eyebrow">Principal Enterprise Systems Architect &amp; Technical Product Owner</span>
+        <h1>Senthil Kasi</h1>
+        <div class="subtitle">Enterprise Finance Systems &bull; NetSuite OneWorld (13+ Yrs) &bull; SOX 404 Governance &bull; Governed AI Workflows</div>
+        <p class="lead" style="margin-bottom: 0;">
+          15+ years of enterprise IT experience—including 13+ years across the Oracle NetSuite ERP ecosystem—architecting, integrating, and governing financial infrastructure from pre-IPO readiness through post-IPO operations. Partnering across Accounting, Treasury, InfoSec, and Engineering to bridge declarative ERP design with governed LLM automation on GCP.
+        </p>
       </div>
     </header>
 
